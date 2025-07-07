@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+    commands:
+      - pip install -r app/requirements.txt
+  pre_build:
+    commands:
+      - pytest app/tests/
+      - sonar-scanner
+  build:
+    commands:
+      - echo "Build step (handled by GitHub Actions in this setup)"
+  post_build:
+    commands:
+      - echo "Post build step (handled by GitHub Actions in this setup)"
+artifacts:
+  files:
+    - imagedefinitions.json 
