@@ -1,4 +1,4 @@
-# Enterprise CI/CD Platform (Sample)
+# Enterprise CI/CD Platform
 
 This project demonstrates a scalable CI/CD pipeline using GitHub Actions, AWS ECR, EKS (Kubernetes), Docker, and SonarQube.
 
